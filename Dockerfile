@@ -14,3 +14,4 @@ COPY --from=build /usr/src/app/target/*.jar /usr/app/petclinic.jar
 EXPOSE 8080
 
 ENTRYPOINT ["java", "-jar", "/usr/app/petclinic.jar"]
+
