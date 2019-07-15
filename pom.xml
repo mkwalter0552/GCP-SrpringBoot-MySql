@@ -46,6 +46,7 @@
       <dependency>
           <groupId>org.springframework.cloud</groupId>
           <artifactId>spring-cloud-gcp-starter-sql-mysql</artifactId>
+          <version>1.0.0.RELEASE</version>
       </dependency>
 
       <dependency>
