@@ -65,10 +65,10 @@ $ pulumi config set dockerPassword --secret [your-dockerhub-password-here]
 
 This provisions all the GCP resources necessary, including your GKE cluster and database, as well as building and publishing your container image, all in a single gesture:
 
-After this completes, numerous outputs will show up. 
+ After this completes, numerous outputs will show up. 
 'appAddress' is the URL that your Spring Boot app will be available at, appName is the resulting Kubernetes Deployment, dbAddress is your MySql hostname in case you want to connect to it with mysql, and kueConfig is the full Kubernetes configuration that you can use with kubectl
 
-4) At this point, you have a running cluster.Feel free to modify your program, and run pulumi up to redeploy changes. The Pulumi CLI automatically detects what has changed and makes the minimal edits necessary to accomplish these changes. This could be altering the app code, adding new GCP or Kubernetes resources, or anything, really.
+4)At this point, you have a running cluster. Feel free to modify your program, and run pulumi up to redeploy changes. The Pulumi CLI automatically detects what has changed and makes the minimal edits necessary to accomplish these changes. This could be altering the app code, adding new GCP or Kubernetes resources, or anything, really.
 
 
 5)Once you are done, you can destroy all of the resources, and the stack:
