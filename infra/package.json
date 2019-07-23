@@ -1,0 +1,12 @@
+{
+  "name": "gcp-typescript",
+  "devDependencies": {
+    "@types/node": "latest"
+  },
+  "dependencies": {
+    "@pulumi/docker": "latest",
+    "@pulumi/gcp": "latest",
+    "@pulumi/kubernetes": "latest",
+    "@pulumi/pulumi": "latest"
+  }
+}
