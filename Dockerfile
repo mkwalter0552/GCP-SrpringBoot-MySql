@@ -5,7 +5,7 @@ LABEL version=0.0.1
 COPY src /usr/src/app/src
 COPY pom.xml /usr/src/app
 COPY docker-compose.yml /usr/src/app
-RUN mvn -Dmaven.test.skip=true /usr/src/app/pom.xml clean package
+RUN mvn -Dmaven.test.skip=true  clean package
 
 FROM openjdk:8
 # copy any jar files into the image
