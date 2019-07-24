@@ -11,10 +11,11 @@ export const instance = new gcp.sql.DatabaseInstance("my-instance", {
 const db= new gcp.sql.Database("petclinic",{
     instance:instance.name,
     name: config.dbUsername,
+
     
 })
 // Create a user with the configured credentials for the spring boot app to use.
-const user = new gcp.sql.User("web-db-user", {
+const user = new gcp.sql.User("root", {
     instance: instance.name,
     name: config.dbUsername,
     password: config.dbPassword,
