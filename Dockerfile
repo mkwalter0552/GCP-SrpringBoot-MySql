@@ -17,5 +17,5 @@ FROM openjdk:8
 #COPY --from=build /usr/src/app/target/*.jar /usr/app/petclinic.jar
 
 EXPOSE 8080
-
-ENTRYPOINT ["java", "-jar", "/app/target/*.jar"]
+CMD java -jar /app/target/*.jar
+#ENTRYPOINT ["java", "-jar", "/app/target/*.jar"]
