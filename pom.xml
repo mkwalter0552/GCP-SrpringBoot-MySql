@@ -32,7 +32,7 @@
     </properties>
 
     <!-- Add Spring Cloud GCP Dependency BOM -->
-    <dependencyManagement>
+   <!-- <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
@@ -43,7 +43,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
+-->
     <dependencies>
         <!-- Spring and Spring Boot dependencies -->
         <dependency>
@@ -85,10 +85,10 @@
         </dependency>
 
         <!-- Add CloudSQL Starter for MySQL -->
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-gcp-starter-sql-mysql</artifactId>
-        </dependency>
+        </dependency>-->
 
         <!-- caching -->
         <dependency>
@@ -239,11 +239,11 @@
 
     <repositories>
         <!-- Use Spring Milestone Repository -->
-        <repository>
+       <!-- <repository>
             <id>repository.spring.milestone</id>
             <name>Spring Milestones Repository</name>
             <url>http://repo.spring.io/milestone</url>
-        </repository>
+        </repository>-->
 
         <repository>
             <id>spring-snapshots</id>
